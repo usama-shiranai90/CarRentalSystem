@@ -1,0 +1,63 @@
+#rentbutton:hover {
+    -fx-background-radius:10px;
+    -fx-background-color: #ffb37a;
+}
+
+#booking_button:hover{
+    -fx-background-color: #ffb37a;
+    -fx-background-radius:10px;
+}
+
+
+#carlist_button:hover {
+    -fx-background-radius: 10px;
+    -fx-background-color: #ffb37a;
+}
+
+#menubar:hover{
+
+    -fx-background-color: #ffa28a;
+
+}
+
+#p2{
+    -fx-background-image: url('Images/b2.jpg');
+    -fx-background-size: 610px 524px;
+    -fx-background-repeat: no-repeat;
+}
+
+#homew1{
+    -fx-background-image: url('Images/b1.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 736px 524px;
+}
+#homew2{
+    -fx-background-image: url('Images/b3.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 736px 524px;
+}
+
+#homew3{
+    -fx-background-image: url('Images/11.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 736px 524px;
+}
+
+#homew4{
+    -fx-background-image: url('Images/b5.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 736px auto;
+}
+#homew5{
+    -fx-background-image: url('Images/b6.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 736px 524px;
+}
+
+#backwallreg{
+    -fx-background-image: url('Images/regwal.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 736px 524px;
+}
+
+

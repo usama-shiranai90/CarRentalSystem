@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegistrationController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="652.0" stroke="BLACK" strokeType="INSIDE" width="610.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.9902912621359223" startX="0.13106796116504849">
+               <stops>
+                  <Stop color="#f6fff1" />
+                  <Stop color="#c6a5a5" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Group layoutX="77.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="132.0" layoutX="-76.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="608.0">
+               <fill>
+                  <LinearGradient endY="1.0">
+                     <stops>
+                        <Stop color="#bcd8e0" />
+                        <Stop color="#d06262" offset="0.007246376811594203" />
+                        <Stop color="#2a2f2f" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Line endX="532.0" endY="129.0" startX="-76.0" startY="129.0" />
+            <ImageView fitHeight="149.0" fitWidth="347.0" layoutX="67.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <image>
+                  <Image url="@../Images/2020-05-12_3-20-52.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D width="400.0" />
+               </viewport>
+            </ImageView>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Group>
+      <Pane id="backwallreg" layoutX="10.0" layoutY="129.0" opacity="0.9" prefHeight="523.0" prefWidth="610.0" stylesheets="@../color_setting.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="129.0">
+         <children>
+            <ImageView fx:id="back" fitHeight="34.0" fitWidth="44.0" layoutX="6.0" layoutY="479.0" onMouseClicked="#backtologin" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/back.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane layoutX="301.0" layoutY="145.0" opacity="0.93" prefHeight="429.0" prefWidth="292.0" style="-fx-background-color: D5DBCF; -fx-background-radius: 30px;">
+         <children>
+            <Label alignment="CENTER" layoutX="2.0" layoutY="23.0" prefHeight="46.0" prefWidth="292.0" text="Welcome ! Please fill all blocks to">
+               <font>
+                  <Font name="Microsoft YaHei" size="15.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="registerbutton" buttonType="RAISED" layoutX="94.0" layoutY="358.0" onMouseClicked="#Signupaction" prefHeight="32.0" prefWidth="108.0" ripplerFill="#beffce" style="-fx-background-color: #F5CBA7;" text="Sign Up" textFill="#3c1f1f" />
+            <Pane fx:id="reg_pass" layoutX="41.0" layoutY="212.0" prefHeight="46.0" prefWidth="210.0" />
+            <Pane layoutX="2.0" layoutY="252.0" prefHeight="32.0" prefWidth="292.0" stylesheets="@../color_setting.css" />
+            <Label alignment="CENTER" layoutX="2.0" layoutY="46.0" prefHeight="46.0" prefWidth="292.0" text="create new account">
+               <font>
+                  <Font name="Microsoft YaHei" size="15.0" />
+               </font>
+            </Label>
+            <VBox layoutX="40.0" layoutY="99.0" prefHeight="239.0" prefWidth="210.0" spacing="25.0">
+               <children>
+                  <JFXTextField fx:id="reg_username" alignment="CENTER" focusColor="#c4915a" labelFloat="true" prefHeight="16.0" prefWidth="292.0" promptText="Username" style="-fx-border-radius: 05px; -fx-border-color: FA1515;" unFocusColor="#4d4d4d00">
+                     <tooltip>
+                        <Tooltip text="Enter Username" />
+                     </tooltip>
+                  </JFXTextField>
+                  <JFXTextField fx:id="reg_email" alignment="CENTER" focusColor="#c4915a" labelFloat="true" prefHeight="33.0" prefWidth="199.0" promptText="email" style="-fx-border-radius: 05px; -fx-border-color: FA1515;" unFocusColor="#4d4d4d00">
+                     <tooltip>
+                        <Tooltip text="Enter Username" />
+                     </tooltip>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="userpassword" alignment="CENTER" focusColor="#c4915a" labelFloat="true" prefHeight="33.0" prefWidth="199.0" promptText="Password" style="-fx-border-radius: 05px; -fx-border-color: FA1515;" unFocusColor="#4d4d4d00">
+                     <tooltip>
+                        <Tooltip text="Enter Password" />
+                     </tooltip>
+                  </JFXPasswordField>
+                  <JFXPasswordField fx:id="reg_conpass" alignment="CENTER" focusColor="#c4915a" labelFloat="true" prefHeight="33.0" prefWidth="199.0" promptText="Confirm Password" style="-fx-border-radius: 05px; -fx-border-color: FA1515;" unFocusColor="#4d4d4d00">
+                     <tooltip>
+                        <Tooltip text="Enter Password" />
+                     </tooltip>
+                  </JFXPasswordField>
+               </children>
+            </VBox>
+         </children>
+         <effect>
+            <DropShadow spread="0.07">
+               <color>
+                  <Color blue="0.800053596496582" green="0.800053596496582" red="0.8657894730567932" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

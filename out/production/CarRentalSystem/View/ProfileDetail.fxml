@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootpanep" prefHeight="538.0" prefWidth="444.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainScreenController">
+   <children>
+      <Group layoutX="75.0" layoutY="2.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="36.0" layoutX="-75.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="464.0">
+               <fill>
+                  <LinearGradient endX="0.6526718139648438" endY="0.9656488240220165" startX="0.6641220927010967">
+                     <stops>
+                        <Stop color="#575757" />
+                        <Stop color="#43869a" offset="0.9961832061068702" />
+                        <Stop color="#43869a" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <MenuBar id="menubar" layoutX="-76.0" layoutY="-2.0" prefHeight="34.0" prefWidth="477.0" style="-fx-background-color: #43869a;" stylesheets="@../color_setting.css">
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#Exit" text="Exit" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Profile">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#Myprofile" text="My Profile" />
+                        <MenuItem mnemonicParsing="false" text="Show Orders" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Order">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Show all cars" />
+                        <MenuItem mnemonicParsing="false" text="Make an order" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Messages">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Send a message" />
+                        <MenuItem mnemonicParsing="false" text="Show messgaes" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
+               <effect>
+                  <ColorAdjust saturation="-0.15" />
+               </effect>
+            </MenuBar>
+            <Line endX="398.0" endY="32.0" startX="-75.0" startY="33.0" />
+            <ImageView fitHeight="32.0" fitWidth="91.0" layoutX="297.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <image>
+                  <Image url="@../Images/2020-05-12_3-20-52.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D width="400.0" />
+               </viewport>
+            </ImageView>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Group>
+      <Pane layoutX="79.0" layoutY="50.0" opacity="0.93" prefHeight="458.0" prefWidth="335.0" style="-fx-background-color: D5DBCF; -fx-background-radius: 5px;">
+         <effect>
+            <DropShadow spread="0.07">
+               <color>
+                  <Color blue="0.800053596496582" green="0.800053596496582" red="0.8657894730567932" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Pane prefHeight="458.0" prefWidth="335.0" style="-fx-border-color: #D5DBCF; -fx-border-radius: 5px;">
+               <children>
+                  <Line endX="220.0" endY="-15.0" fill="#81b5a1b2" layoutX="115.0" layoutY="85.0" startX="-115.0" startY="-15.0" />
+                  <Label layoutX="11.0" prefHeight="60.0" prefWidth="142.0" text="User">
+                     <font>
+                        <Font name="Old English Text MT" size="33.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="82.0" layoutY="23.0" prefHeight="52.0" prefWidth="200.0" text="Profile">
+                     <font>
+                        <Font name="OCR A Extended" size="26.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="35.0" layoutY="99.0" prefHeight="296.0" prefWidth="257.0" spacing="20.0">
+                     <children>
+                        <JFXTextField fx:id="firstname" alignment="CENTER" focusColor="#683d0e" labelFloat="true" prefHeight="33.0" prefWidth="199.0" promptText="First-Name" style="-fx-border-radius: 05px; -fx-border-color: Transparent;" unFocusColor="#06392657">
+                           <tooltip>
+                              <Tooltip text="Enter user's Firstname" />
+                           </tooltip>
+                        </JFXTextField>
+                        <JFXTextField fx:id="lastname" alignment="CENTER" focusColor="#683d0e" labelFloat="true" prefHeight="33.0" prefWidth="199.0" promptText="Last-Name" style="-fx-border-radius: 05px; -fx-border-color: Transparent;" unFocusColor="#06392657">
+                           <tooltip>
+                              <Tooltip text="Enter user's Lastname" />
+                           </tooltip>
+                        </JFXTextField>
+                        <JFXTextField fx:id="email" alignment="CENTER" focusColor="#683d0e" labelFloat="true" prefHeight="33.0" prefWidth="199.0" promptText="Email" style="-fx-border-radius: 05px; -fx-border-color: Transparent;" unFocusColor="#06392657">
+                           <tooltip>
+                              <Tooltip text="Enter Email" />
+                           </tooltip>
+                        </JFXTextField>
+                        <JFXTextField fx:id="phonenumber" alignment="CENTER" focusColor="#683d0e" labelFloat="true" prefHeight="33.0" prefWidth="199.0" promptText="Phoneno" style="-fx-border-radius: 05px; -fx-border-color: Transparent;" unFocusColor="#06392657">
+                           <tooltip>
+                              <Tooltip text="Enter Phone-Number" />
+                           </tooltip>
+                        </JFXTextField>
+                        <JFXTextField fx:id="Cnic" alignment="CENTER" focusColor="#683d0e" labelFloat="true" prefHeight="33.0" prefWidth="199.0" promptText="CNIC" style="-fx-border-radius: 05px; -fx-border-color: Transparent;" unFocusColor="#06392657">
+                           <tooltip>
+                              <Tooltip text="Enter CNIC" />
+                           </tooltip>
+                        </JFXTextField>
+                        <JFXCheckBox checkedColor="#3c6b54" prefHeight="39.0" prefWidth="276.0" text="Are you sure you want to save setting" />
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <JFXButton fx:id="savebutton" buttonType="RAISED" layoutX="122.0" layoutY="410.0" onMouseClicked="#saveprofile" prefHeight="34.0" prefWidth="91.0" ripplerFill="#beffce" style="-fx-background-color: #F5CBA7;" text="Save" />
+         </children>
+      </Pane>
+      <Label fx:id="successfulnoti" alignment="CENTER" layoutX="161.0" layoutY="508.0" prefHeight="33.0" prefWidth="155.0" />
+   </children>
+</AnchorPane>

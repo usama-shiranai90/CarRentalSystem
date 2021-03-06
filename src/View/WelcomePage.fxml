@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootpane" prefHeight="318.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.WelcomeLogin">
+   <children>
+      <ImageView fitHeight="350.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/WelcomeImage.jpg" />
+         </image></ImageView>
+      <JFXSpinner layoutX="64.0" layoutY="241.0" prefHeight="55.0" prefWidth="80.0" />
+      <Label layoutX="19.0" layoutY="212.0" prefHeight="21.0" prefWidth="175.0" text="Please wait , Loading" textFill="#f5eaea">
+         <font>
+            <Font name="Microsoft YaHei Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
